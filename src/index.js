@@ -3,10 +3,19 @@ import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 
 class Square extends React.Component {
+    // 무언가를 `기억하기`위해 사용하는 component로 state를 사용
+    // class에 생성자를 만들어 state를 초기화
+    constructor(props) {
+        super(props);
+        this.state = {
+            value: null
+        };
+    }
+
     render() {
         return (
-            <button className="square">
-                {this.props.value}
+            <button className="square" onClick={() => { this.setState({ value: 'X' }) }}>
+                {this.state.value}
             </button>
         )
     };
