@@ -25,6 +25,7 @@ class Board extends React.Component {
     }
 
     handleClick(i) {
+        // slice를 이용하여 불변성 구성
         const squares = this.state.squares.slice();
         squares[i] = 'X';
         this.setState({ squares: squares });
