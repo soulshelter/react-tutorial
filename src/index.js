@@ -2,17 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 
-class Square extends React.Component {
+// Class를 function으로 변경
+function Square(props) {
     // 부모 컴포넌트에서 props를 받아오게 수정
-    render() {
-        return (
-            <button
-                className="square"
-                onClick={() => this.props.onClick()}>
-                {this.props.value}
-            </button>
-        )
-    };
+    return (
+        <button
+            className="square"
+            onClick={props.onClick}>
+            {props.value}
+        </button>
+    )
 }
 
 class Board extends React.Component {
