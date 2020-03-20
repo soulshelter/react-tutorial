@@ -3,6 +3,8 @@
 이 프로젝트는 [자습서:React 시작하기](https://ko.reactjs.org/tutorial/tutorial.html#inspecting-the-starter-code)를 보고 작성되었습니다.   
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+***
+
 ## Available Scripts
 
 In the project directory, you can run:
